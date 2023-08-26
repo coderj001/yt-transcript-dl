@@ -100,6 +100,7 @@ _mypy:
 
 .PHONY: test
 test: complexity-baseline ## Run the tests defined in the project
+	$(info [*] Python pytest coverage...)
 	pytest --cov
 
 $(VERBOSE).SILENT:
